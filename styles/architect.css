@@ -115,21 +115,32 @@ main{
     font-weight: 600;
 }
 
+.feature-image{
+    height: 90%;
+    margin-left: 50px;
+    
+}
+
 .ten-years-badge{
     border-radius: 8px;
     background: #FF900E;
     color: white;
     width: 342px;
     padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+    right: 90px;
 }
 
 .ten-years-badge h2{
     font-size: 4rem;
     font-weight: 700;
+    margin: 0px;
 }
 
 .ten-years-badge p{
-    font-size: 25px;
+    font-size: 1.56rem;
     font-weight: 500;
 }
 
@@ -225,7 +236,22 @@ main{
 
 .sponsors-image-container img{
     width: 165px;
+    margin-bottom: 130px;
     
+}
+
+/* FOOTER STYLES */
+
+footer{
+    border-radius: 8px;
+    background: #FFF4E7;
+    padding: 40px 410px;
+    text-align: center;
+    max-width: 800px;
+    margin-left: 240px;
+    margin-right: 240px;
+    margin-top: 0px;
+    margin-bottom: 216px;
 }
 
 
@@ -243,12 +269,22 @@ main{
         padding: 20px;
     }
 
-    nav, .teams-container{
+    nav, .teams-container, .features{
         /* flex-direction: column; */
         flex-direction: column-reverse;
     }
 
-    .facts-card-container, .sponsors-image-container{
+    .feature-image img{
+        width: 90%;
+        margin-left: 0px;
+    }
+
+    .ten-years-badge{
+        max-width: 250px;
+        position: static;
+    }
+
+    .facts-card-container, .sponsors-image-container {
         flex-direction: column;
     }
 
@@ -275,15 +311,34 @@ main{
 
     .sponsors-image-container{
         gap: 40px;
+        
+    }
+
+    .sponsors-image-container img{
+        margin-bottom: 20px;
     }
     
+    footer{
+        padding: 20px;
+        margin: 0px;
+        margin-bottom: 50px;
+    }
 
 }
 
 /* TABLET OR MEDIUM DEVICES */
 @media screen and (min-width:576px) and (max-width:960px) {
-    nav, .teams-container{
+    nav, .teams-container, .features{
         flex-direction: column-reverse;
+    }
+
+    .features{
+        align-items: center;
+    }
+    
+    .ten-years-badge{
+        /* position: relative;
+        right: 20px; */
     }
 
     header{
