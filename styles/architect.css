@@ -185,6 +185,10 @@ main{
         flex-direction: column-reverse;
     }
 
+    .facts-card-container{
+        flex-direction: column;
+    }
+
     .teams-image-container{
         grid-template-columns: 1fr;
     }
@@ -193,9 +197,17 @@ main{
         margin-bottom: 20px;
     }
 
-    .teams-content{
+    .teams-content, .facts-card-container{
         padding-right: 20px;
         padding-left: 20px;
+    }
+
+    .facts-card-container{
+        gap: 20px;
+    }
+
+    .facts-card-container .card-title{
+        margin-bottom: 20px;
     }
     
 
