@@ -358,6 +358,17 @@ footer{
         width: 130px;
         
     }
+
+    .sponsors-image-container img{
+        margin-bottom: 20px;
+    }
+    
+    footer{
+        padding: 20px;
+        margin: 0px;
+        margin-bottom: 50px;
+        margin-left: 20px;
+    }
 } 
 
 
